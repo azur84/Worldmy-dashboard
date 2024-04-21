@@ -1,0 +1,52 @@
+.menu_bar {
+    height: 60px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+.icon {
+    transition-property: border-radius;
+    transition-duration: 0.5s;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    border-radius: 20px;
+    float:left;
+    visibility: visible;
+}
+
+.icontitle:hover .icon {
+    border-radius: 10px;
+}
+
+.title {
+    transition-property: width;
+    transition-duration: 0.5s;
+    font-size: 35px;
+    margin: 0px;
+    overflow: hidden;
+    width: 0px;
+    height: 50px;
+    white-space: nowrap;
+    visibility: visible;
+}
+
+.icontitle {
+    height: 60px;
+    width: 60px;
+    transition-property: width;
+    transition-duration: 0.5s;
+    visibility: hidden;
+    float:left;
+}
+
+.icontitle:hover {
+    height: 60px;
+    width: 210px;
+    visibility: visible;
+}
+
+.icontitle:hover .title{
+    width: 150px;
+}

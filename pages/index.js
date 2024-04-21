@@ -1,7 +1,11 @@
 import { useCallback, useEffect, useState } from 'react'
-import Button from '../components/Button'
-import ClickCount from '../components/ClickCount'
+import Button from '../components/Button/Button'
 import styles from '../styles/home.module.css'
+import Image from 'next/image'
+import banner from '../assets/images/worldmy_banner.png'
+import Menu_bar from '../components/Menu_bar/Menu_bar'
+
+
 
 function throwError() {
   console.log(
@@ -28,12 +32,14 @@ function Home() {
 
   return (
     <main className={styles.main}>
-      <h1>Fast Refresh Demo</h1>
-      <p>
-        Fast Refresh is a Next.js feature that gives you instantaneous feedback
-        on edits made to your React components, without ever losing component
-        state.
-      </p>
+      <Menu_bar/>
+      <Image
+        src={banner}
+        width={17 * 80}
+        height={6 * 80}
+        className={styles.banner}
+      />
+      <h1>Worldmy</h1>
       <hr className={styles.hr} />
       <div>
         <p>
@@ -41,11 +47,6 @@ function Home() {
           there are errors.
         </p>
         <p>Current value: {count}</p>
-      </div>
-      <hr className={styles.hr} />
-      <div>
-        <p>Component with state.</p>
-        <ClickCount />
       </div>
       <hr className={styles.hr} />
       <div>

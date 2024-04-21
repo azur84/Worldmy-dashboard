@@ -11,4 +11,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   hyphens: auto;
+  background-color: rgb(35, 35, 35);
+  color: azure;
 }
